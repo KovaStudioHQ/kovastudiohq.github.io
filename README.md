@@ -1,2 +1,3 @@
-# kovastudiohq.github.io
-kovastudiohq.github.io
+# Kova Gear Picks
+
+https://kovastudiohq.github.io

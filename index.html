@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Kova Studio gear picks for each Kova tracker. As an Amazon Associate, Kova Studio earns from qualifying purchases.">
+<title>Kova Gear Picks</title>
+<style>
+/* Layout: one narrow phone-first column; sticky product chips; each product is a section of pick rows. Single dark brand look (Kova Winter Arc). */
+:root{
+  --bg:#0b0d10; --panel:#13161b; --line:#232832; --fg:#eef1f5; --muted:#9aa3b0;
+  --accent:#e8edf3; --pink:#f29bbf; --green:#7fd6a4; --chip:#1a1e25;
+  --display:"Impact","Haettenschweiler","Arial Narrow Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px;display:grid;gap:28px}
+header{display:grid;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--muted)}
+.ticks{display:flex;gap:4px}
+.ticks span{width:14px;height:14px;border:2px solid var(--fg);border-radius:3px;display:grid;place-items:center;font-size:10px;line-height:1;color:var(--fg)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,12vw,72px);line-height:.95;margin:0;letter-spacing:.01em;text-transform:uppercase;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:56ch}
+.disc{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--line)}
+nav a{font-size:13px;font-weight:600;color:var(--fg);text-decoration:none;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+nav a:focus-visible,.pick a:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+section{display:grid;gap:12px;scroll-margin-top:72px}
+section h2{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.02em;text-transform:uppercase;margin:0;line-height:1.05}
+section h2 small{display:block;font-family:var(--body);font-size:13px;letter-spacing:.08em;color:var(--muted);font-weight:600;margin-top:4px}
+section.pink h2{color:var(--pink)} section.green h2{color:var(--green)}
+.picks{display:grid;gap:10px}
+.pick{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center}
+.pick h3{margin:0;font-size:16px;font-weight:700}
+.opt{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:2px}
+.pick p{margin:0;color:var(--muted);font-size:14px;grid-column:1;min-width:0}
+.pick a{grid-column:2;grid-row:1/span 2;align-self:center;white-space:nowrap;font-weight:700;font-size:14px;color:var(--bg);background:var(--accent);text-decoration:none;border-radius:6px;padding:9px 12px}
+section.pink .pick a{background:var(--pink)} section.green .pick a{background:var(--green)}
+@media (max-width:420px){.pick{grid-template-columns:1fr}.pick a{grid-column:1;grid-row:auto;justify-self:start}}
+footer{display:grid;gap:8px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+footer strong{color:var(--fg);font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.04em;text-transform:uppercase}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="ticks"><span>✓</span><span>✓</span><span>✓</span></span>Kova Studio</div>
+    <h1>Kova Gear Picks</h1>
+    <p class="lede">The simple kit that goes with your Kova tracker. You don't need to buy anything to use your tracker. If you want kit, these are the basics we'd start with. Already own something similar? Use that. Tap your tracker below.</p>
+    <p class="disc">As an Amazon Associate, Kova Studio earns from qualifying purchases. Buying through these links costs you nothing extra. Prices and stock change, so check the listing and reviews before you buy.</p>
+  </header>
+
+  <nav aria-label="Pick your tracker">
+    <a href="#glutes">Glutes &amp; Abs</a>
+    <a href="#pilates">Pilates &amp; Yoga</a>
+    <a href="#workout">Workout Tracker</a>
+    <a href="#weightloss">Weight Loss</a>
+    <a href="#mealprep">Meal Prep</a>
+  </nav>
+
+  <section id="glutes" class="pink">
+    <h2>Glutes &amp; Abs Program<small>Home and gym glute days</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Gaiam 10 mm Exercise Mat</h3><p>Thick padding for floor work, bridges and ab moves on home days.</p><a data-asin="B07H9PZDQW" href="https://www.amazon.com/dp/B07H9PZDQW">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Renoj Fabric Hip Bands, Set Of 3</h3><p>For kickbacks, side walks and clamshells. Fabric bands don't roll up like thin latex ones.</p><a data-asin="B087R2Q4HM" href="https://www.amazon.com/dp/B087R2Q4HM">See On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="pilates" class="pink">
+    <h2>Pilates &amp; Yoga Program<small>Mat sessions at home</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Gaiam 10 mm Exercise Mat</h3><p>Cushions your knees and spine on rolling and kneeling moves. Already have a mat? Use it.</p><a data-asin="B07H9PZDQW" href="https://www.amazon.com/dp/B07H9PZDQW">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> ProBody 14 Inch Pilates Ring</h3><p>Only worth it if you want extra resistance for inner thigh and arm work.</p><a data-asin="B078KFF7ND" href="https://www.amazon.com/dp/B078KFF7ND">See On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="workout">
+    <h2>Workout Tracker<small>Lifting days and protein</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Fit Simplify Loop Bands, Set Of 5</h3><p>Five strengths for warm-ups, glute activation and home sessions.</p><a data-asin="B01AVDVHTI" href="https://www.amazon.com/dp/B01AVDVHTI">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Etekcity Kitchen Scale</h3><p>Weigh chicken, rice and oats so your protein numbers are right.</p><a data-asin="B0113UZJE2" href="https://www.amazon.com/dp/B0113UZJE2">See On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="weightloss" class="green">
+    <h2>Weight Loss Tracker<small>Weigh-ins and measurements</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>MyoTape Body Tape Measure</h3><p>A one-hand tape for waist, hips and arms. It measures centimetres and inches, not body fat.</p><a data-asin="B000G7YW7Y" href="https://www.amazon.com/dp/B000G7YW7Y">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Etekcity Bathroom Scale</h3><p>Same scale, same morning time, every weigh-in. That keeps your trend line honest.</p><a data-asin="B01HI1W1V4" href="https://www.amazon.com/dp/B01HI1W1V4">See On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="mealprep">
+    <h2>Meal Prep Tracker<small>Cook once, eat all week</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Bentgo Meal Prep Containers</h3><p>10 trays with 10 lids. Enough for a working week of lunches and dinners.</p><a data-asin="B08CVTY9FS" href="https://www.amazon.com/dp/B08CVTY9FS">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Etekcity Kitchen Scale</h3><p>Matches the grams in your recipes so the protein numbers stay right.</p><a data-asin="B0113UZJE2" href="https://www.amazon.com/dp/B0113UZJE2">See On Amazon</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Locked In.</strong>
+    <span>Kova Studio. Trackers that live on your phone. These are general gear ideas, not medical advice. Ask a professional if you have an injury.</span>
+    <span>As an Amazon Associate, Kova Studio earns from qualifying purchases.</span>
+    <span>Privacy: this page uses no cookies and collects no data. Amazon's own privacy policy applies once you open a link.</span>
+  </footer>
+</div>
+
+<script>
+// Amazon Associates tracking ID. Leave empty until the account exists.
+var KOVA_TAG = "kovastudiohq-20";
+document.querySelectorAll(".pick a[data-asin]").forEach(function(a){
+  var url = "https://www.amazon.com/dp/" + a.getAttribute("data-asin");
+  if (KOVA_TAG) url += "?tag=" + encodeURIComponent(KOVA_TAG);
+  a.href = url; a.target = "_blank"; a.rel = "sponsored noopener";
+});
+function jump(){ var id=(location.hash||"").slice(1); if(!id) return; var el=document.getElementById(id); if(el) el.scrollIntoView(); }
+window.addEventListener("hashchange", jump); window.addEventListener("load", jump);
+</script>
+</body>
+</html>
