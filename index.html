@@ -25,8 +25,9 @@ header{display:grid;gap:12px}
 h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,12vw,72px);line-height:.95;margin:0;letter-spacing:.01em;text-transform:uppercase;text-wrap:balance}
 .lede{margin:0;color:var(--muted);max-width:56ch}
 .disc{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0}
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--line)}
-nav a{font-size:13px;font-weight:600;color:var(--fg);text-decoration:none;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:8px;border-bottom:1px solid var(--line)}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;white-space:nowrap;font-size:13px;font-weight:600;color:var(--fg);text-decoration:none;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
 nav a:focus-visible,.pick a:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 section{display:grid;gap:12px;scroll-margin-top:72px}
 section h2{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.02em;text-transform:uppercase;margin:0;line-height:1.05}
@@ -61,6 +62,11 @@ footer strong{color:var(--fg);font-family:var(--display);font-weight:800;font-si
     <a href="#workout">Workout Tracker</a>
     <a href="#weightloss">Weight Loss</a>
     <a href="#mealprep">Meal Prep</a>
+    <a href="#macros">Macros</a>
+    <a href="#75soft">75 Soft</a>
+    <a href="#overload">Progressive Overload</a>
+    <a href="#women">Women's Workout</a>
+    <a href="#habit">30-Day Habit</a>
   </nav>
 
   <section id="glutes" class="pink">
@@ -103,6 +109,48 @@ footer strong{color:var(--fg);font-family:var(--display);font-weight:800;font-si
     </div>
   </section>
 
+  <section id="macros" class="green">
+    <h2>Macro &amp; Calorie Tracker<small>Weigh it, log it, hit your numbers</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Etekcity Kitchen Scale</h3><p>Grams make your macros accurate. Guessing portions is where most logs go wrong.</p><a data-asin="B0113UZJE2" href="https://www.amazon.com/dp/B0113UZJE2">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Bentgo Meal Prep Containers</h3><p>Portion a few days ahead, log once, and the numbers stay right.</p><a data-asin="B08CVTY9FS" href="https://www.amazon.com/dp/B08CVTY9FS">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Stainless Steel Measuring Cups And Spoons</h3><p>For oils, rice and oats when the scale isn't out. Pick a stainless set that won't warp.</p><a data-q="stainless steel measuring cups and spoons set" href="https://www.amazon.com/s?k=stainless+steel+measuring+cups+and+spoons+set">Search On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="75soft">
+    <h2>75 Soft Challenge Tracker<small>75 days, a few rules a day</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Gallon Water Bottle With Time Markers</h3><p>The markers show if you're on pace for your water before the evening rush.</p><a data-q="1 gallon water bottle with time marker" href="https://www.amazon.com/s?k=1+gallon+water+bottle+with+time+marker">Search On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Fit Simplify Loop Bands, Set Of 5</h3><p>Turns a walk-and-bands session at home into your daily workout.</p><a data-asin="B01AVDVHTI" href="https://www.amazon.com/dp/B01AVDVHTI">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Clip-On Book Light</h3><p>Get your pages in at night without keeping anyone awake.</p><a data-q="rechargeable clip on book reading light" href="https://www.amazon.com/s?k=rechargeable+clip+on+book+reading+light">Search On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="overload">
+    <h2>Progressive Overload &amp; PR Tracker<small>Add a little, every week</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Fractional Weight Plates</h3><p>When the next 5 lb jump is too big, add 1 to 2.5 lb instead. Check they fit your bar.</p><a data-q="fractional weight plates olympic 1.25 lb" href="https://www.amazon.com/s?k=fractional+weight+plates+olympic+1.25+lb">Search On Amazon</a></div>
+      <div class="pick"><h3>Padded Lifting Straps</h3><p>Let your back and legs keep progressing when grip gives out first on heavy pulls.</p><a data-q="padded weight lifting straps" href="https://www.amazon.com/s?k=padded+weight+lifting+straps">Search On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Nylon Lifting Belt</h3><p>Worth it once your squats and deadlifts get heavy. Not needed in your first months.</p><a data-q="nylon weightlifting belt" href="https://www.amazon.com/s?k=nylon+weightlifting+belt">Search On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="women" class="pink">
+    <h2>Women's Workout Planner<small>Home and gym sessions</small></h2>
+    <div class="picks">
+      <div class="pick"><h3>Gaiam 10 mm Exercise Mat</h3><p>Thick padding for floor work, bridges and core moves at home.</p><a data-asin="B07H9PZDQW" href="https://www.amazon.com/dp/B07H9PZDQW">See On Amazon</a></div>
+      <div class="pick"><h3><span class="opt">Optional</span> Renoj Fabric Hip Bands, Set Of 3</h3><p>For glute warm-ups, side walks and kickbacks. Fabric bands stay put.</p><a data-asin="B087R2Q4HM" href="https://www.amazon.com/dp/B087R2Q4HM">See On Amazon</a></div>
+    </div>
+  </section>
+
+  <section id="habit">
+    <h2>30-Day Habit Tracker<small>Most habits need no gear</small></h2>
+    <div class="picks">
+      <div class="pick"><h3><span class="opt">Optional</span> Gallon Water Bottle With Time Markers</h3><p>Only if drinking more water is one of your habits. Everything else just needs the tracker.</p><a data-q="1 gallon water bottle with time marker" href="https://www.amazon.com/s?k=1+gallon+water+bottle+with+time+marker">Search On Amazon</a></div>
+    </div>
+  </section>
+
   <footer>
     <strong>Locked In.</strong>
     <span>Kova Studio. Trackers that live on your phone. These are general gear ideas, not medical advice. Ask a professional if you have an injury.</span>
@@ -114,6 +162,11 @@ footer strong{color:var(--fg);font-family:var(--display);font-weight:800;font-si
 <script>
 // Amazon Associates tracking ID. Leave empty until the account exists.
 var KOVA_TAG = "kovastudiohq-20";
+document.querySelectorAll(".pick a[data-q]").forEach(function(a){
+  var url = "https://www.amazon.com/s?k=" + encodeURIComponent(a.getAttribute("data-q"));
+  if (KOVA_TAG) url += "&tag=" + encodeURIComponent(KOVA_TAG);
+  a.href = url; a.target = "_blank"; a.rel = "sponsored noopener";
+});
 document.querySelectorAll(".pick a[data-asin]").forEach(function(a){
   var url = "https://www.amazon.com/dp/" + a.getAttribute("data-asin");
   if (KOVA_TAG) url += "?tag=" + encodeURIComponent(KOVA_TAG);
